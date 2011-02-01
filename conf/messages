@@ -1,0 +1,7 @@
+# Default registration messages
+# You can specialize this file for each language.
+# For exemple, for french create a messages.fr file
+
+#registration.name=registration
+registration.auth_error=Invalid username or password
+registration.from_email=noreply@example.com

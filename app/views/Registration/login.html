@@ -1,0 +1,12 @@
+#{if flash.error}
+    <p class="error">&{flash.error}</p>
+#{/if}
+#{if flash.success}
+    <p class="success">&{flash.success}</p>
+#{/if}
+
+<form method="post" action="../auth/">
+    <input type="text" name="username"/>
+    <input type="password" name="password"/>
+    <input type="submit"/>
+</form>

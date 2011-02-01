@@ -1,0 +1,16 @@
+# This file defines all module routes (Higher priority routes first)
+#
+# import these routes in the main app as :
+# *     /                       module:registration
+#
+# ~~~~
+
+GET         /register/                     Registration.register
+POST        /register/finish/              Registration.registerFinish
+GET         /confirm/                      Registration.confirm
+GET         /recover/                      Registration.recover
+POST        /recover/finish/               Registration.recoverFinish
+GET         /password/                     Registration.password
+GET         /login/                        Registration.login
+POST        /auth/                         Registration.auth
+GET         /logout/                       Registration.logout
