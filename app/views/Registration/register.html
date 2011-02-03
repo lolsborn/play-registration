@@ -1,1 +1,36 @@
-<h2>Register</h2>
+#{extends 'Registration/layout.html' /}
+
+<h1>&{'registration.register_title'}</h1>
+
+#{form @registerFinish()}
+
+    #{if flash.error}
+        <p class="error">
+            &{flash.error}
+        </p>
+    #{/if}
+    #{if flash.success}
+        <p class="success"> &{flash.success}
+        </p>
+    #{/if}
+    <ul>
+        <li>
+            <label for="email">&{'registration.email'}</label>
+            <input type="text" name="email" id="email" value="${flash.email}" />
+            #{ifError 'email'}<span class="error">#{error 'email' /}</span>#{/ifError}
+        </li>
+        <li>
+            <label for="password">&{'registration.password'}</label>
+            <input type="password" name="password" id="password" />
+            #{ifError 'password'}<span class="error">#{error 'password' /}</span>#{/ifError}
+        </li>
+        <li>
+            <label for="confirm">&{'registration.confirm'}</label>
+            <input type="password" name="confirm" id="confirm" />
+            #{ifError 'confirm'}<span class="error">#{error 'confirm' /}</span>#{/ifError}
+        </li>
+        <li>
+            <input type="submit" value="&{'registration.register'}" />
+        </li>
+    </ul>
+#{/form}

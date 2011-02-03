@@ -7,7 +7,8 @@
 
 GET         /register/                     Registration.register
 POST        /register/finish/              Registration.registerFinish
-GET         /confirm/                      Registration.confirm
+GET         /register/pending/             Registration.pending
+GET         /confirm/{code}                Registration.confirm
 GET         /recover/                      Registration.recover
 POST        /recover/finish/               Registration.recoverFinish
 GET         /password/                     Registration.password

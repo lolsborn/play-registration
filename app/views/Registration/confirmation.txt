@@ -1,0 +1,6 @@
+This is the best email ever for ${recipient}.
+
+Click on this shiny link to confirm your
+registration.
+
+${confirmation_link}

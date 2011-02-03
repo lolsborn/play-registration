@@ -3,5 +3,12 @@
 # For exemple, for french create a messages.fr file
 
 #registration.name=registration
+registration.register_title=Register
+registration.login_title=Login
 registration.auth_error=Invalid username or password
-registration.from_email=noreply@example.com
+registration.login=Login
+registration.register=Register
+registration.username=Username
+registration.password=Password
+registration.email=Email
+registration.confirm=Confirm
